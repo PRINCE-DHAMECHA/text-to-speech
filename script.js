@@ -4,6 +4,7 @@ const speechBtn = document.querySelector("button");
 
 let synth = speechSynthesis;
 function voices() {
+    document.getElementsByClassName("one").remove();
     for (let v of synth.getVoices()) {
         let selected = v.name === "Google US English" ? "selected" : ""
         let option = `<option value="${v.name}" ${selected}>${v.name} ${v.lang}</option>`
