@@ -46,14 +46,14 @@ speechBtn.addEventListener("click", (e) => {
             setInterval(() => {
                 if (!synth.speaking && !isSpeaking) {
                     isSpeaking = true;
-                    speechBtn.innerText = "Covert To Speech "
+                    speechBtn.innerText = "Convert To Speech "
                     let icon = `<i class="fa fa-volume-up" aria-hidden="tru"></i>`
                     speechBtn.insertAdjacentHTML("beforeEnd", icon)
                 }
             });
         }
         else {
-            speechBtn.innerText = "Covert To Speech "
+            speechBtn.innerText = "Convert To Speech "
             let icon = `<i class="fa fa-volume-up" aria-hidden="tru"></i>`
             speechBtn.insertAdjacentHTML("beforeEnd", icon)
         }
